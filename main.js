@@ -37,10 +37,10 @@ function validarFortaleza(password) {
     const mensajeFortaleza = document.getElementById('strengthMessage');
 
     if (password.length < 6 || !tieneNumero || !tieneMayuscula || !tieneMinuscula || !tieneSimbolo) {
-        mensajeFortaleza.innerHTML = "Weak password! It must contain at least 6 characters, a number, and an uppercase letter.";
+        mensajeFortaleza.innerHTML = "¡Contraseña débil! Debe contener al menos 6 caracteres, un número y una letra mayúscula.";
         mensajeFortaleza.style.color = 'red';
     } else {
-        mensajeFortaleza.innerHTML = "Strong password!";
+        mensajeFortaleza.innerHTML = "¡Contraseña fuerte!";
         mensajeFortaleza.style.color = 'green';
     }
 }
